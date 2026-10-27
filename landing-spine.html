@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цитадель Физио | Лечение позвоночника</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link"><div class="logo-circle"><span>ЛОГО</span></div></a>
+            <a href="index.html" class="header-title">Цитадель твоего здоровья</a>
+            <div class="header-menu">
+                <button class="menu-btn" id="menuBtn" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+                <nav class="dropdown-menu" id="dropdownMenu">
+                    <a href="index.html">Главная</a>
+                    <a href="specialists.html">Специалисты</a>
+                    <a href="technologies.html">Технологии</a>
+                    <a href="documents.html">Нормативные документы</a>
+                    <a href="#contacts">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header container">
+            <div class="landing-capsule">
+                <h1>Лечение позвоночника</h1>
+            </div>
+        </section>
+
+        <section class="landing-content container">
+            <div class="landing-card">
+                <div class="landing-text">
+                    <ul class="landing-list">
+                        <li>Резорбция межпозвоночных грыж</li>
+                        <li>Лечение грыж</li>
+                        <li>Лечение спондилодисцита позвоночника (септического и асептического характера)</li>
+                        <li>Реабилитация после травм и операций на позвоночнике</li>
+                    </ul>
+                </div>
+                <div class="landing-image">
+                    <div class="landing-img-placeholder">ФОТО</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contacts">
+        <div class="footer-main">
+            <div class="container footer-container">
+                <div class="footer-contacts">
+                    <h2 class="footer-title">Контакты</h2>
+                    <div class="footer-info-compact">
+                        <p class="footer-address">г. Ростов-на-Дону, Бульвар Комарова 1Е, строение 2</p>
+                        <p class="footer-schedule">Пн – Вс: 10:00 – 20:00<br>Без выходных</p>
+                    </div>
+                    <a href="tel:89286282225" class="footer-phone">8 (928) 628-22-25</a>
+                </div>
+                <div class="footer-map"><div class="footer-map-placeholder">КАРТА</div></div>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="container sub-footer-container">
+                <div class="mini-logo-circle">ЛОГО</div>
+                <p class="copyright">© 2026 Центр физиотерапии «Цитадель Физио»</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="accessibility-btn" id="accessibilityBtn" aria-label="Настройки доступности">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+    </button>
+
+    <div class="accessibility-modal" id="accessibilityModal">
+        <div class="accessibility-content">
+            <h2>Настройки доступности</h2>
+            <div class="acc-control"><span>Размер шрифта</span><div class="acc-buttons"><button id="fontInc">+</button><button id="fontReset">Сброс</button><button id="fontDec">-</button></div></div>
+            <div class="acc-control"><span>Цветовая схема</span><div class="acc-buttons-vertical"><button class="color-scheme" data-scheme="normal">Светлая</button><button class="color-scheme" data-scheme="monochrome">Черно-белая</button><button class="color-scheme" data-scheme="invert">Инверсия</button></div></div>
+            <button class="acc-reset-all" id="resetAll">Сбросить настройки</button>
+            <button class="acc-close" id="closeModal">Закрыть</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
