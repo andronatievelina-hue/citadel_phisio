@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#A28144" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- horseshoe -->
+  <path d="M20 14v22c0 6.6 5.4 12 12 12s12-5.4 12-12V14"/>
+  <!-- poles -->
+  <path d="M20 14h10v10H20z"/>
+  <path d="M34 14h10v10H34z"/>
+  <!-- N / S marks as simple lines -->
+  <path d="M23 18h4" stroke-width="1.8"/>
+  <path d="M37 18h4" stroke-width="1.8"/>
+  <path d="M37 22h4" stroke-width="1.8"/>
+  <!-- field arcs -->
+  <path d="M16 46c5 7 12 10 16 10s11-3 16-10" stroke-width="1.6" opacity="0.45"/>
+</svg>

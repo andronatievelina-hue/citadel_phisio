@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D4B89F"/>
+      <stop offset="0.5" stop-color="#C5A265"/>
+      <stop offset="1" stop-color="#9A7B5F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#g)"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#FBF9F5" stroke-width="1.5" opacity="0.5"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#FBF9F5">Ц</text>
+</svg>

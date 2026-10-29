@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Цитадель Физио | Мужское и женское здоровье</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Физиотерапия для мужского и женского здоровья.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Цитадель Физио">
+    <meta property="og:title" content="Цитадель Физио | Мужское и женское здоровье">
+    <meta property="og:description" content="Физиотерапия для мужского и женского здоровья.">
+    <meta property="og:url" content="https://citadel-physio.ru/landing-health.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Цитадель Физио | Мужское и женское здоровье">
+    <meta name="twitter:description" content="Физиотерапия для мужского и женского здоровья.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container header-container">
-            <a href="index.html" class="logo-link"><div class="logo-circle"><span>ЛОГО</span></div></a>
-            <a href="index.html" class="header-title">Цитадель твоего здоровья</a>
+            <a href="index.html" class="logo-link"><div class="logo-circle"><img src="assets/images/logo.jpg" alt="Цитадель Физио"></div></a>
+            <a href="index.html" class="header-title"><span>Цитадель твоего</span><span>здоровья</span></a>
             <div class="header-menu">
                 <button class="menu-btn" id="menuBtn" aria-label="Открыть меню"><span></span><span></span><span></span></button>
                 <nav class="dropdown-menu" id="dropdownMenu">
                     <a href="index.html">Главная</a>
                     <a href="specialists.html">Специалисты</a>
                     <a href="technologies.html">Технологии</a>
-                    <a href="documents.html">Нормативные документы</a>
+                    <a href="documents.html">Документы</a>
                     <a href="#contacts">Контакты</a>
                 </nav>
             </div>
@@ -28,31 +41,31 @@
     </header>
 
     <main>
-        <section class="page-header container">
+        <section class="page-header container reveal">
             <div class="landing-capsule">
                 <h1>Мужское и женское здоровье</h1>
             </div>
         </section>
 
         <section class="landing-content container">
-            <div class="landing-card">
+            <div class="landing-card reveal">
                 <div class="landing-text">
                     <div class="gender-title">Мужское здоровье <span class="gender-symbol">♂</span></div>
-                    <ul class="landing-list">
+                    <ul class="landing-list landing-list--male">
                         <li>Лечение хронического простатита, везикулита</li>
                         <li>Лечение нарушений потенции</li>
                         <li>Лечение болезни Пейрони</li>
                     </ul>
 
                     <div class="gender-title" style="margin-top: 30px;">Женское здоровье <span class="gender-symbol">♀</span></div>
-                    <ul class="landing-list">
+                    <ul class="landing-list landing-list--female">
                         <li>Лечение хронической тазовой боли, эндометриоза, спаек</li>
                         <li>Лечение бесплодия</li>
                         <li>Восстановление после операций</li>
                     </ul>
                 </div>
                 <div class="landing-image">
-                    <div class="landing-img-placeholder">ФОТО</div>
+                    <div class="landing-img-placeholder"><img src="assets/images/icon-health.jpg" alt="Иллюстрация мужского и женского здоровья"></div>
                 </div>
             </div>
         </section>
@@ -69,30 +82,173 @@
                     </div>
                     <a href="tel:89286282225" class="footer-phone">8 (928) 628-22-25</a>
                 </div>
-                <div class="footer-map"><div class="footer-map-placeholder">КАРТА</div></div>
+                <div class="footer-map">
+                    <iframe
+                        class="footer-map-frame"
+                        title="Цитадель Физио на карте — Ростов-на-Дону"
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7a23911af63bd736b69f493c1b4c0fc868cc09116bf0b924bc788d79c9aa5489&amp;source=constructor"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allowfullscreen="true"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
         <div class="sub-footer">
             <div class="container sub-footer-container">
-                <div class="mini-logo-circle">ЛОГО</div>
+                <div class="mini-logo-circle"><img src="assets/images/logo.jpg" alt="Цитадель Физио"></div>
                 <p class="copyright">© 2026 Центр физиотерапии «Цитадель Физио»</p>
             </div>
         </div>
     </footer>
 
+    <!-- КНОПКА ВЫЗОВА ПАНЕЛИ ДОСТУПНОСТИ -->
+        <!-- КНОПКА ВЫЗОВА ПАНЕЛИ ДОСТУПНОСТИ -->
     <button class="accessibility-btn" id="accessibilityBtn" aria-label="Настройки доступности">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
     </button>
 
+      <!-- МОДАЛЬНОЕ ОКНО ДОСТУПНОСТИ -->
     <div class="accessibility-modal" id="accessibilityModal">
         <div class="accessibility-content">
-            <h2>Настройки доступности</h2>
-            <div class="acc-control"><span>Размер шрифта</span><div class="acc-buttons"><button id="fontInc">+</button><button id="fontReset">Сброс</button><button id="fontDec">-</button></div></div>
-            <div class="acc-control"><span>Цветовая схема</span><div class="acc-buttons-vertical"><button class="color-scheme" data-scheme="normal">Светлая</button><button class="color-scheme" data-scheme="monochrome">Черно-белая</button><button class="color-scheme" data-scheme="invert">Инверсия</button></div></div>
+            <button class="acc-close" id="closeModal" aria-label="Закрыть настройки">×</button>
+            <h2>Настройка доступности</h2>
+
+            <!-- Модули контента -->
+            <div class="acc-section">
+                <h3 class="acc-section-title">Модули контента</h3>
+                <div class="acc-grid-2">
+                    <button class="acc-btn" id="btnFontSize" aria-pressed="false">
+                        <span>Размер шрифта</span>
+                        <div class="acc-icon-wrap">
+                            <div class="acc-controls-inline">
+                                <span class="acc-plus">+</span>
+                                <span class="acc-default-text">по умолчанию</span>
+                                <span class="acc-minus">−</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnFontFamily" aria-pressed="false">
+                        <span>Читаемый шрифт</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnLineHeight" aria-pressed="false">
+                        <span>Высота строки</span>
+                        <div class="acc-icon-wrap">
+                            <div class="acc-controls-inline">
+                                <span class="acc-plus">+</span>
+                                <span class="acc-default-text">по умолчанию</span>
+                                <span class="acc-minus">−</span>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnBigCursor" aria-pressed="false">
+                        <span>Большой курсор</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/></svg>
+                        </div>
+                    </button>
+                </div>
+                
+                <div class="acc-grid-3">
+                    <button class="acc-btn" id="btnLetterSpacing" aria-pressed="false">
+                        <span>Межбуквенный интервал</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16M4 8h16M4 12h16M4 16h16M4 20h16"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnTextAlign" aria-pressed="false">
+                        <span>Выравнивание по центру</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16M4 8h10M4 12h16M4 16h10M4 20h16"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnFontWeight" aria-pressed="false">
+                        <span>Толщина шрифта</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h8a4 4 0 0 1 0 8H6zM6 12h9a4 4 0 0 1 0 8H6z"/></svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Модули цветов -->
+            <div class="acc-section">
+                <h3 class="acc-section-title">Модули цветов</h3>
+                <div class="acc-grid-3">
+                    <button class="acc-btn" id="btnThemeLight" aria-pressed="true">
+                        <span>Светлый контраст</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnThemeDark" aria-pressed="false">
+                        <span>Высокий контраст</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 0 0 20V2z" fill="currentColor"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnThemeMono" aria-pressed="false">
+                        <span>Монохромный</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Модули ориентации -->
+            <div class="acc-section">
+                <h3 class="acc-section-title">Модули ориентации</h3>
+                <div class="acc-grid-3">
+                    <button class="acc-btn" id="btnReadableLine" aria-pressed="false">
+                        <span>Читаемая линия</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnReadableMask" aria-pressed="false">
+                        <span>Читаемая маска</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="2"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnHideImages" aria-pressed="false">
+                        <span>Скрыть изображения</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><path d="M2 2l20 20"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnHighlightContent" aria-pressed="false">
+                        <span>Выделить контент</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8V4h4m8 0h4v4m0 8v4h-4m-8 0H4v-4"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnStopAnimation" aria-pressed="false">
+                        <span>Остановить анимацию</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M4.93 4.93l14.14 14.14"/></svg>
+                        </div>
+                    </button>
+                    <button class="acc-btn" id="btnHighlightLinks" aria-pressed="false">
+                        <span>Выделить ссылки</span>
+                        <div class="acc-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
             <button class="acc-reset-all" id="resetAll">Сбросить настройки</button>
-            <button class="acc-close" id="closeModal">Закрыть</button>
         </div>
     </div>
+
     <script src="js/main.js"></script>
+    <script src="js/accessibility.js"></script>
 </body>
 </html>

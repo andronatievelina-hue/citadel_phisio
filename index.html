@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Цитадель Физио | Главная</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Физиоцентр Цитадель доктора Журавлёвой. Лечение позвоночника, суставов, боли без уколов. Ростов-на-Дону.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Цитадель Физио">
+    <meta property="og:title" content="Цитадель Физио | Главная">
+    <meta property="og:description" content="Физиоцентр Цитадель доктора Журавлёвой. Лечение позвоночника, суставов, боли без уколов. Ростов-на-Дону.">
+    <meta property="og:url" content="https://citadel-physio.ru/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Цитадель Физио | Главная">
+    <meta name="twitter:description" content="Физиоцентр Цитадель доктора Журавлёвой. Лечение позвоночника, суставов, боли без уколов. Ростов-на-Дону.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
 
@@ -15,9 +28,9 @@
     <header class="site-header">
         <div class="container header-container">
             <a href="index.html" class="logo-link">
-                <div class="logo-circle"><span>ЛОГО</span></div>
+                <div class="logo-circle"><img src="assets/images/logo.jpg" alt="Цитадель Физио"></div>
             </a>
-            <a href="index.html" class="header-title">Цитадель твоего здоровья</a>
+            <a href="index.html" class="header-title"><span>Цитадель твоего</span><span>здоровья</span></a>
             <div class="header-menu">
                 <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">
                     <span></span><span></span><span></span>
@@ -26,7 +39,7 @@
                     <a href="index.html">Главная</a>
                     <a href="specialists.html">Специалисты</a>
                     <a href="technologies.html">Технологии</a>
-                    <a href="documents.html">Нормативные документы</a>
+                    <a href="documents.html">Документы</a>
                     <a href="#contacts">Контакты</a>
                 </nav>
             </div>
@@ -41,8 +54,14 @@
                 <span class="hero-placeholder-text">Заглушка фонового изображения</span>
                 <div class="hero-card">
                     <h1 class="hero-title">
-                        <span>ФИЗИОЦЕНТР ЦИТАДЕЛЬ</span>
-                        <span>ДОКТОРА ЖУРАВЛЕВОЙ</span>
+                        <span class="hero-line">
+                            <span class="hero-word">ФИЗИОЦЕНТР</span>
+                            <span class="hero-word">ЦИТАДЕЛЬ</span>
+                        </span>
+                        <span class="hero-line">
+                            <span class="hero-word">ДОКТОРА</span>
+                            <span class="hero-word">ЖУРАВЛЕВОЙ</span>
+                        </span>
                     </h1>
                 </div>
                 <a href="#contacts" class="hero-btn">записаться</a>
@@ -51,37 +70,41 @@
 
         <!-- СПЕЦИАЛИСТЫ -->
         <section class="specialists-preview container">
-            <div class="specialists-header-wrap">
+            <div class="specialists-header-wrap reveal">
                 <h2 class="section-title">Запись на приём к специалистам физиоцентра</h2>
                 <p class="section-subtitle">
                     Вы можете записаться к врачу самостоятельно или через администратора по телефону: 
                     <a href="tel:89286282225" class="text-link">8 (928) 628-22-25</a>
                 </p>
             </div>
-            <div class="label-tag">СПЕЦИАЛИСТЫ</div>
+            <div class="label-tag reveal reveal-delay-1">СПЕЦИАЛИСТЫ</div>
 
-            <div class="doctor-preview-card">
-                <div class="doctor-photo-placeholder">ФОТО</div>
+            <a href="specialists.html" class="doctor-preview-card reveal reveal-delay-1">
+                <div class="doctor-photo-placeholder">
+                    <img src="assets/images/doctor-zhuravleva.jpg" alt="Специалист физиотерапевтического центра — Журавлёва Анна Евгеньевна">
+                </div>
                 <div class="doctor-info">
                     <h3 class="doctor-name">Журавлёва Анна Евгеньевна</h3>
                     <p class="doctor-role">Главный врач, физиотерапевт</p>
                     <p class="doctor-desc">Стаж работы более 15 лет. Специалист по реабилитации.</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="doctor-preview-card">
-                <div class="doctor-photo-placeholder">ФОТО</div>
+            <a href="specialists.html" class="doctor-preview-card reveal reveal-delay-2">
+                <div class="doctor-photo-placeholder doctor-photo-placeholder--empty" aria-label="Фото специалиста"><span>Фото</span></div>
                 <div class="doctor-info">
                     <h3 class="doctor-name">Фамилия Имя Отчество</h3>
                     <p class="doctor-role">Информация о специалисте</p>
                     <p class="doctor-desc">Краткое описание регалий и опыта работы врача.</p>
                 </div>
-            </div>
+            </a>
         </section>
+
+        <div class="section-line" aria-hidden="true"></div>
 
        <!-- БАННЕР -->
         <section class="banner-all-inclusive">
-            <div class="banner-header-wrap">
+            <div class="banner-header-wrap reveal">
                 <h2 class="banner-title">
                     <span>Лечение по принципу —</span>
                     <span>максимум эффекта с одного визита</span>
@@ -89,31 +112,33 @@
             </div>
         </section>
 
+        <div class="section-line" aria-hidden="true"></div>
+
         <!-- НАПРАВЛЕНИЯ -->
         <section class="treatments container">
-            <h2 class="treatments-title">НАПРАВЛЕНИЯ ЛЕЧЕНИЯ</h2>
+            <h2 class="treatments-title reveal">НАПРАВЛЕНИЯ ЛЕЧЕНИЯ</h2>
             <div class="treatments-grid">
-                <a href="landing-pain.html" class="treatment-card">
-                    <div class="treatment-icon-placeholder">ИКОНКА</div>
+                <a href="landing-pain.html" class="treatment-card reveal reveal-delay-1">
+                    <div class="treatment-icon-placeholder"><img src="assets/images/icon-pain.jpg" alt="Иллюстрация купирования боли без уколов"></div>
                     <h3 class="treatment-name">Купирование боли без уколов</h3>
                 </a>
-                <a href="landing-spine.html" class="treatment-card">
-                    <div class="treatment-icon-placeholder">ИКОНКА</div>
+                <a href="landing-spine.html" class="treatment-card reveal reveal-delay-2">
+                    <div class="treatment-icon-placeholder"><img src="assets/images/icon-spine.jpg" alt="Иллюстрация лечения позвоночника"></div>
                     <h3 class="treatment-name">Лечение позвоночника</h3>
                 </a>
-                <a href="landing-joints.html" class="treatment-card">
-                    <div class="treatment-icon-placeholder">ИКОНКА</div>
+                <a href="landing-joints.html" class="treatment-card reveal reveal-delay-3">
+                    <div class="treatment-icon-placeholder"><img src="assets/images/icon-joints.jpg" alt="Иллюстрация лечения суставов"></div>
                     <h3 class="treatment-name">Лечение суставов, пяточной шпоры</h3>
                 </a>
-                <a href="landing-health.html" class="treatment-card">
-                    <div class="treatment-icon-placeholder">ИКОНКА</div>
+                <a href="landing-health.html" class="treatment-card reveal reveal-delay-1">
+                    <div class="treatment-icon-placeholder"><img src="assets/images/icon-health.jpg" alt="Иллюстрация мужского и женского здоровья"></div>
                     <div class="treatment-name">
                         <div class="gender-row">Мужское здоровье <span class="gender-icon">♂</span></div>
                         <div class="gender-row">Женское здоровье <span class="gender-icon">♀</span></div>
                     </div>
                 </a>
-                <a href="landing-nerves.html" class="treatment-card">
-                    <div class="treatment-icon-placeholder">ИКОНКА</div>
+                <a href="landing-nerves.html" class="treatment-card reveal reveal-delay-2">
+                    <div class="treatment-icon-placeholder"><img src="assets/images/icon-nerves.jpg" alt="Иллюстрация лечения нервных волокон"></div>
                     <h3 class="treatment-name">Лечение нервных волокон</h3>
                 </a>
             </div>
@@ -133,14 +158,23 @@
                     <a href="tel:89286282225" class="footer-phone">8 (928) 628-22-25</a>
                 </div>
                 <div class="footer-map">
-                    <div class="footer-map-placeholder">КАРТА</div>
+                    <iframe
+                        class="footer-map-frame"
+                        title="Цитадель Физио на карте — Ростов-на-Дону"
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7a23911af63bd736b69f493c1b4c0fc868cc09116bf0b924bc788d79c9aa5489&amp;source=constructor"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        allowfullscreen="true"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
         
         <div class="sub-footer">
             <div class="container sub-footer-container">
-                <div class="mini-logo-circle">ЛОГО</div>
+                <div class="mini-logo-circle"><img src="assets/images/logo.jpg" alt="Цитадель Физио"></div>
                 <p class="copyright">© 2026 Центр физиотерапии «Цитадель Физио»</p>
             </div>
         </div>
@@ -290,5 +324,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/accessibility.js"></script>
 </body>
 </html>
