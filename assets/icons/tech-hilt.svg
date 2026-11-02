@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#A28144" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#C4A05A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <!-- source -->
   <circle cx="14" cy="32" r="5"/>
-  <circle cx="14" cy="32" r="2" fill="#A28144" stroke="none"/>
+  <circle cx="14" cy="32" r="2" fill="#C4A05A" stroke="none"/>
   <!-- main beam -->
   <path d="M20 32h32"/>
   <!-- ray flares -->
