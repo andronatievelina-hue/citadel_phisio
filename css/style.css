@@ -164,6 +164,22 @@ img { max-width: 100%; display: block; }
     background-image: linear-gradient(180deg, #C4A05A 0%, #B18A4A 40%, #8A6C38 100%);
     -webkit-background-clip: text; background-clip: text;
     -webkit-text-fill-color: transparent; color: #8A6C38;
+    
+}
+
+/* Осветляющий оверлей */
+.hero-overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    
+    /* Используем твой молочный цвет (#FBF9F5) с прозрачностью 40% */
+    /* Чем больше второе число (0.4), тем светлее и бледнее будет картинка */
+    background: rgba(251, 249, 245, 0.2); 
+    
+    z-index: 1;
 }
 /* --- Единый стиль CTA-кнопок --- */
 .btn, .hero-btn {
