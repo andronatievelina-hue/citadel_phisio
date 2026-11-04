@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <!-- horseshoe -->
   <path d="M18 12v20c0 7.732 6.268 14 14 14s14-6.268 14-14V12"
-        stroke="#C4A05A" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+        stroke="#B39A6A" stroke-width="3.2" stroke-linecap="round" fill="none"/>
   <!-- left pole -->
-  <rect x="14" y="10" width="10" height="10" rx="1.5" fill="#C4A05A"/>
+  <rect x="14" y="10" width="10" height="10" rx="1.5" fill="#B39A6A"/>
   <!-- right pole -->
-  <rect x="40" y="10" width="10" height="10" rx="1.5" fill="#C4A05A"/>
+  <rect x="40" y="10" width="10" height="10" rx="1.5" fill="#B39A6A"/>
   <!-- plus badge -->
-  <circle cx="50" cy="42" r="8" stroke="#C4A05A" stroke-width="2" fill="none"/>
-  <path d="M50 37.5v9M45.5 42h9" stroke="#C4A05A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="50" cy="42" r="8" stroke="#B39A6A" stroke-width="2" fill="none"/>
+  <path d="M50 37.5v9M45.5 42h9" stroke="#B39A6A" stroke-width="2" stroke-linecap="round"/>
 </svg>
