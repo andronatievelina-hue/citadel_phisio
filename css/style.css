@@ -2543,22 +2543,32 @@ button:focus-visible {
 }
 
 
-/* Treatment names: lighter gold, per-line gradient */
-.treatment-name .tn-line {
-    display: block;
-    font-weight: 300;
-    background-image: linear-gradient(180deg, #E8D4A0 0%, #D4B56E 45%, #C4A05A 100%) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    color: #C4A05A !important;
-}
-h3.treatment-name {
+/* Treatment names: dark readable + gold on hover */
+.treatment-name,
+h3.treatment-name,
+.treatment-name .tn-line,
+.treatment-name .gender-row {
+    background-image: none !important;
+    -webkit-text-fill-color: #5A4A3C !important;
+    color: #5A4A3C !important;
     font-weight: 300 !important;
+    transition: color 0.25s ease, -webkit-text-fill-color 0.25s ease !important;
+    filter: none !important;
 }
-h3.treatment-name:not(:has(.tn-line)) {
-    background-image: linear-gradient(180deg, #E8D4A0 0%, #D4B56E 45%, #C4A05A 100%) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
+.treatment-card:hover .treatment-name,
+.treatment-card:hover h3.treatment-name,
+.treatment-card:hover .treatment-name .tn-line,
+.treatment-card:hover .treatment-name .gender-row {
+    background-image: none !important;
+    -webkit-text-fill-color: #B18A4A !important;
+    color: #B18A4A !important;
+    filter: none !important;
+}
+.treatment-card:hover .gender-icon {
+    color: #B18A4A !important;
+    -webkit-text-fill-color: #B18A4A !important;
+}
+.gender-icon {
+    color: #5A4A3C !important;
+    -webkit-text-fill-color: #5A4A3C !important;
 }
