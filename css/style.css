@@ -2590,26 +2590,26 @@ h3.treatment-name,
     }
     .hero-citadel {
         font-family: var(--font-serif) !important;
-        font-size: 42px !important;
-        font-weight: 600 !important;
+        font-size: 46px !important;
+        font-weight: 500 !important;
         letter-spacing: 0.12em !important;
         line-height: 1.1 !important;
-        background-image: linear-gradient(180deg, #F2DC96 0%, #E4C56A 30%, #C9A24A 60%, #A87E32 100%) !important;
+        background-image: linear-gradient(180deg, #FFE9A8 0%, #F0D070 28%, #E0B84A 55%, #C99838 100%) !important;
         -webkit-background-clip: text !important;
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
-        color: #C9A24A !important;
+        color: #E0B84A !important;
     }
     .hero-subtitle {
-        font-size: 15px !important;
+        font-size: 17px !important;
         font-weight: 400 !important;
         letter-spacing: 0.04em !important;
-        margin-top: 6px !important;
-        background-image: linear-gradient(180deg, #E6D090 0%, #C9A24A 100%) !important;
+        margin-top: 8px !important;
+        background-image: linear-gradient(180deg, #F0D890 0%, #E0C060 40%, #D4B050 100%) !important;
         -webkit-background-clip: text !important;
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
-        color: #C9A24A !important;
+        color: #D4B050 !important;
     }
     /* Quiet CTA — less attention */
     .hero-btn, .btn {
@@ -2635,11 +2635,13 @@ h3.treatment-name,
 }
 @media (max-width: 380px) {
     .hero-citadel {
-        font-size: 36px !important;
+        font-size: 40px !important;
         letter-spacing: 0.1em !important;
-        font-weight: 600 !important;
+        font-weight: 500 !important;
+        background-image: linear-gradient(180deg, #FFE9A8 0%, #F0D070 28%, #E0B84A 55%, #C99838 100%) !important;
+        color: #E0B84A !important;
     }
-    .hero-subtitle { font-size: 13px !important; }
+    .hero-subtitle { font-size: 15px !important; font-weight: 400 !important; color: #D4B050 !important; }
     .hero-btn, .btn {
         font-size: 12px !important;
         height: 36px !important;
