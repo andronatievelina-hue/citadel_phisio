@@ -2601,7 +2601,7 @@ h3.treatment-name,
         color: #E0B84A !important;
     }
     .hero-subtitle {
-        font-size: 17px !important;
+        font-size: 19px !important;
         font-weight: 400 !important;
         letter-spacing: 0.04em !important;
         margin-top: 8px !important;
@@ -2641,7 +2641,7 @@ h3.treatment-name,
         background-image: linear-gradient(180deg, #FFE9A8 0%, #F0D070 28%, #E0B84A 55%, #C99838 100%) !important;
         color: #E0B84A !important;
     }
-    .hero-subtitle { font-size: 15px !important; font-weight: 400 !important; color: #D4B050 !important; }
+    .hero-subtitle { font-size: 17px !important; font-weight: 400 !important; color: #D4B050 !important; }
     .hero-btn, .btn {
         font-size: 12px !important;
         height: 36px !important;
@@ -2660,4 +2660,70 @@ h3.treatment-name,
 }
 .treatment-icon-placeholder {
     border-color: rgba(201, 162, 74, 0.5) !important;
+}
+
+
+/* === Cool gold accents (restrained, not warm) === */
+:root {
+  --gold-cool: #C4B28A;
+  --gold-cool-soft: rgba(196, 178, 138, 0.45);
+  --gold-cool-border: rgba(196, 178, 138, 0.38);
+}
+
+/* Header thin cool-gold line */
+.site-header {
+    border-bottom-color: rgba(196, 178, 138, 0.35) !important;
+}
+
+/* Logo ring */
+.logo-circle {
+    border-color: rgba(196, 178, 138, 0.55) !important;
+    box-shadow: 0 2px 10px rgba(160, 140, 100, 0.12);
+}
+
+/* Menu button */
+.menu-btn {
+    border-color: rgba(196, 178, 138, 0.5) !important;
+}
+
+/* Hero card border — cool gold, not orange */
+.hero-card {
+    border-color: rgba(196, 178, 138, 0.55) !important;
+}
+
+/* Section divider */
+.section-line {
+    background: linear-gradient(90deg, transparent 0%, #C4B28A 20%, #B8A67C 50%, #C4B28A 80%, transparent 100%) !important;
+    height: 1px !important;
+}
+
+/* Treatment cards — subtle cool border only */
+.treatment-card {
+    border-color: rgba(196, 178, 138, 0.32) !important;
+}
+.treatment-card:hover {
+    border-color: rgba(196, 178, 138, 0.55) !important;
+}
+.treatment-icon-placeholder {
+    border-color: rgba(196, 178, 138, 0.48) !important;
+}
+
+/* Landing capsule */
+.landing-capsule {
+    border-color: rgba(196, 178, 138, 0.5) !important;
+}
+
+/* Footer map frame */
+.footer-map {
+    border-color: rgba(196, 178, 138, 0.4) !important;
+}
+
+/* Treatments section label — muted cool gold */
+.treatments-title {
+    color: #A89870 !important;
+}
+
+/* CTA border on desktop — cool */
+.btn, .hero-btn {
+    border-color: rgba(196, 178, 138, 0.5) !important;
 }
