@@ -231,8 +231,8 @@ img { max-width: 100%; display: block; }
 .hero-subtitle {
     display: block;
     font-family: var(--font-serif);
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 23px;
+    font-weight: 500;
     letter-spacing: 0.06em;
     text-transform: none;
     background-image: linear-gradient(180deg, #E6D090 0%, #D0B060 45%, #B89248 100%);
@@ -2601,15 +2601,15 @@ h3.treatment-name,
         color: #E0B84A !important;
     }
     .hero-subtitle {
-        font-size: 19px !important;
-        font-weight: 400 !important;
-        letter-spacing: 0.04em !important;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.03em !important;
         margin-top: 8px !important;
-        background-image: linear-gradient(180deg, #F0D890 0%, #E0C060 40%, #D4B050 100%) !important;
+        background-image: linear-gradient(180deg, #E8D090 0%, #D4B050 45%, #C4A05A 100%) !important;
         -webkit-background-clip: text !important;
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
-        color: #D4B050 !important;
+        color: #C4A05A !important;
     }
     /* Quiet CTA — less attention */
     .hero-btn, .btn {
@@ -2641,7 +2641,7 @@ h3.treatment-name,
         background-image: linear-gradient(180deg, #FFE9A8 0%, #F0D070 28%, #E0B84A 55%, #C99838 100%) !important;
         color: #E0B84A !important;
     }
-    .hero-subtitle { font-size: 17px !important; font-weight: 400 !important; color: #D4B050 !important; }
+    .hero-subtitle { font-size: 17px !important; font-weight: 500 !important; color: #C4A05A !important; }
     .hero-btn, .btn {
         font-size: 12px !important;
         height: 36px !important;
@@ -2726,4 +2726,30 @@ h3.treatment-name,
 /* CTA border on desktop — cool */
 .btn, .hero-btn {
     border-color: rgba(196, 178, 138, 0.5) !important;
+}
+
+
+/* Readable subtitle for client feedback */
+.hero-subtitle {
+    font-weight: 500 !important;
+}
+@media (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.03em !important;
+        background-image: linear-gradient(180deg, #E8D090 0%, #D4B050 45%, #C4A05A 100%) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: #C4A05A !important;
+        opacity: 1 !important;
+        filter: none !important;
+    }
+}
+@media (max-width: 380px) {
+    .hero-subtitle {
+        font-size: 16px !important;
+        font-weight: 500 !important;
+    }
 }
