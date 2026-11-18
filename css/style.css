@@ -653,11 +653,11 @@ h3.treatment-name:not(:has(.tn-line)) {
     height: 72px;
     border-radius: 50%;
     background: transparent;
-    border: none;
+    border: 1.5px solid #E0C878;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(64, 51, 41, 0.12);
+    box-shadow: 0 0 0 1px rgba(255, 248, 230, 0.55), 0 2px 10px rgba(200, 170, 90, 0.12);
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -1537,7 +1537,7 @@ body.acc-modal-open {
     .footer-container { flex-direction: column; text-align: center; gap: 32px; max-width: 100%; }
     .footer-contacts { text-align: center; }
     .footer-map { width: 100%; max-width: 480px; }
-    .sub-footer-container { flex-direction: column; gap: 16px; justify-content: center; }
+    .sub-footer-container { flex-direction: row; gap: 16px; justify-content: space-between; align-items: center; }
     .treatment-card { width: calc(50% - 12px); }
     .section-title { white-space: normal; font-size: 32px; }
     .banner-title { font-size: 32px; }
@@ -2187,10 +2187,26 @@ img, svg {
         height: 220px !important;
     }
     .sub-footer-container {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
-        padding: 0 16px;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        gap: 12px !important;
+        text-align: left !important;
+        padding: 0 16px !important;
+    }
+    .mini-logo-circle {
+        width: 56px !important;
+        height: 56px !important;
+        border: 1.5px solid #E0C878 !important;
+        box-shadow: 0 0 0 1px rgba(255, 248, 230, 0.55), 0 2px 8px rgba(200, 170, 90, 0.12) !important;
+        flex-shrink: 0 !important;
+    }
+    .copyright {
+        text-align: right !important;
+        font-size: 12px !important;
+        line-height: 1.35 !important;
+        max-width: 70% !important;
+        margin: 0 !important;
     }
 
     .accessibility-btn {
@@ -2821,4 +2837,39 @@ h3.treatment-name,
 .tech-desc {
     letter-spacing: 0.01em !important;
     word-spacing: normal !important;
+}
+
+
+/* Sub-footer: logo left, text right; gold ring on mini-logo */
+.mini-logo-circle {
+    border: 1.5px solid #E0C878 !important;
+    box-shadow: 0 0 0 1px rgba(255, 248, 230, 0.55), 0 2px 10px rgba(200, 170, 90, 0.12) !important;
+}
+.sub-footer-container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+@media (max-width: 768px) {
+    .sub-footer-container {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        gap: 12px !important;
+        padding: 0 16px !important;
+        text-align: left !important;
+    }
+    .mini-logo-circle {
+        width: 56px !important;
+        height: 56px !important;
+        flex-shrink: 0 !important;
+    }
+    .copyright {
+        text-align: right !important;
+        font-size: 12px !important;
+        line-height: 1.35 !important;
+        max-width: 72% !important;
+        margin: 0 !important;
+    }
 }
